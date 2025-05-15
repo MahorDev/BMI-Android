@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="img_dec">BMI Log</string>
+    <string name="age">Enter Your age</string>
+    <string name="heightFe">Your Height (Feet)</string>
+    <string name="heightIn">Your Height (Inches)</string>
+    <string name="weight">Your Weight (Kg)</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="result">Result</string>
+    <string name="btnClear">Clear</string>
+    <string name="copyright_text">© 2025 Jaikishn Mahor. All rights reserved.</string>
+
+</resources>

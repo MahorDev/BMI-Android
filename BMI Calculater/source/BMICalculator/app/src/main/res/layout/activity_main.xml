@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#442578"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:gravity="center"
+       android:fontFamily="@font/roboto_regular"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:background="#941111"
+
+        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/edtAge"
+        android:src="@drawable/bmi_logo"
+        android:contentDescription="@string/img_dec"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="#ffff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtHeightFe"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtAge"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/heightFe"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtHeightIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#A1887F"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtHeightIn"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtHeightFe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/heightIn"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/edtResult"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#E6E6FA"
+        android:textStyle="bold"
+        android:ems="12"
+        android:hint="@string/result"
+        android:textColor="@color/black"
+        android:textColorHint="#767575"
+        android:gravity="center"
+       />
+    <TextView
+        android:id="@+id/txtSuggestionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="1dp"
+        android:background="#E6E6FA"
+        android:textStyle="bold"
+        android:layout_below="@+id/edtResult"
+        android:layout_marginTop="10dp"
+        android:text="  Suggestions  "
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtSuggestions"
+        android:layout_below="@+id/txtSuggestionName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="#767575"
+        android:background="#E6E6FA"
+        android:textStyle="bold"
+        />
+
+
+
+    <Button
+        android:id="@+id/edtButton"
+        android:layout_below="@+id/edtWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCalculate"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:background="#E6E6FA"
+        android:textColor="@color/calculate_btn"
+        />
+
+    <Button
+        android:id="@+id/edtClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/btnClear"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:backgroundTint="#C62828"
+        />
+    <TextView
+        android:id="@+id/txtCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright_text"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>
